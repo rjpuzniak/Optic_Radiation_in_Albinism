@@ -9,7 +9,6 @@ sub_dirs = strcat(data_folder,'/sub-',subjects,'/dtiinit');
 sub_dirs128 = strcat(data_folder,'/sub-',subjects,'/dtiinit/dti128trilin');
 
 %subjects_fibers_folder = strcat(data_folder,'/sub-',subjects,'/dtiinit/dti128trilin/fibers');
-
 %% Import dummy mrtrix tracks to copy header
 dummy_mrtrix = dtiImportFibersMrtrix('/home/rjp/1_OVGU/1_Connectivity_in_albinism/7_OR_segmentation/Segmentation_yoshimine/OR_tracts/CON_1/CON_1_Left_LGN_fov.tck');
 
@@ -165,6 +164,8 @@ for i=1:length(rois_sets)
     %% Cleaning tractography results
     subjects_contrack_folder=strcat(data_folder,'/sub-',subjects,'/dtiinit/dti128trilin/fibers/conTrack/', strcat('OR_',roi_set));
     v1_rois = {'LGN_L_V1_FOV_L','LGN_R_V1_FOV_R','LGN_L_V1_PARAFOV_L','LGN_R_V1_PARAFOV_R','LGN_L_V1_MED-PERI_L','LGN_R_V1_MED-PERI_R','LGN_L_V1_PERI_L','LGN_R_V1_PERI_R'};
+    
+    fiber_labels={'Left_Optic_Radiation_Foveal','Right_Optic_Radiation_Foveal','Left_Optic_Radiation_Parafoveal','Right_Optic_Radiation_Parafoveal','Left_Optic_Radiation_Medperipheral','Right_Optic_Radiation_Medperipheral','Left_Optic_Radiation_Peripheral','Right_Optic_Radiation_Peripheral'};
     
     % Loop performing segmentation and cleaning of fibers
     for j = 1:length(subjects)
