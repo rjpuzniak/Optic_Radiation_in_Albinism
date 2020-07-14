@@ -1,6 +1,6 @@
 ### Initialization
-participants='CON_1 CON_2 CON_3 CON_4 CON_5 CON_6 CON_7 CON_8 ALB_1 ALB_2 ALB_3 ALB_4 ALB_5 ALB_6 ALB_7 ALB_8 ALB_9'
-participants='CON_7 CON_8 ALB_1 ALB_2 ALB_3 ALB_4 ALB_5 ALB_6 ALB_7 ALB_8 ALB_9'
+#participants='CON_1 CON_2 CON_3 CON_4 CON_5 CON_6 CON_7 CON_8 ALB_1 ALB_2 ALB_3 ALB_4 ALB_5 ALB_6 ALB_7 ALB_8 ALB_9'
+participants='CON_1'
 
 main_folder=/home/rjp/1_OVGU/1_Connectivity_in_albinism
 data_folder=$main_folder/Data

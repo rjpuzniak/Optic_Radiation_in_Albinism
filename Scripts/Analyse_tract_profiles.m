@@ -23,9 +23,9 @@ variants_lgn={'default','thalamic'};
 variants_tracking={'Mrtrix', 'Contrack'};
 
 % Flags for types of analyses to be done
-overview=0;
-clusters=0;
-averaging=0;
+overview=1;
+clusters=1;
+averaging=1;
 
 visualize_mrtrix_tracks=0;
 caculate_voxels_overlap=0;

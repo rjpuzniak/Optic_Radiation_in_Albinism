@@ -21,8 +21,8 @@ for variant in $variants; do
 		done
 
 		# Calculate mean and std of tracks length
-		cd $analysis_folder/Tracking_results/Mrtrix_$variant\_clean/$subj
-		mkdir -p $analysis_folder/Tracking_results/Mrtrix_$variant\_clean/$subj 
+		mkdir -p $analysis_folder/Tracking_results/Mrtrix_$variant\_clean/$subj
+		cd $analysis_folder/Tracking_results/Tmp_Mrtrix_$variant\_clean/$subj 
 		for file in *; do 	
 			mean=$(tckstats $file -output mean -quiet)
 			std=$(tckstats $file -output std -quiet)
